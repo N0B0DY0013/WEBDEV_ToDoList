@@ -2,9 +2,7 @@ const express = require("express");
 const body_parser = require("body-parser");
 const mongoose = require("mongoose");
 
-//const mongo_con = mongoose.createConnection("mongodb://localhost:27017/todoDB")
-const mongo_con = mongoose.createConnection("mongodb+srv://nobody:Test123@cluster0.tbgjezj.mongodb.net/todoDB");
-
+const mongo_con = mongoose.createConnection("mongodb://localhost:27017/todoDB")
 
 
 const mongo_item_schema = new mongoose.Schema({
